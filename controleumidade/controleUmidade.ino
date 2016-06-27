@@ -24,13 +24,13 @@ void myTimerEvent()
   humidadeSolo = (leitura / 4);
     
   if(humidadeSolo < 300) 
-   Serial.println(" Solo seco"); 
+   Serial.println(" Solo umido"); 
 
 if((humidadeSolo >= 300) && (humidadeSolo < 700)) 
   Serial.println(" Relativamente umido"); 
 
-if((humidadeSolo >= 700) && (humidadeSolo < 950))
-  Serial.println(" Bem umido");
+if((humidadeSolo >= 700) && (humidadeSolo < 1023))
+  Serial.println(" Solo seco");
    
 }
 void loop()
