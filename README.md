@@ -28,13 +28,13 @@ leitura = analogRead(A0);
 humidadeSolo = (leitura);
 
 if(humidadeSolo < 300) 
-   Serial.println(" Solo seco"); 
+   Serial.println(" Solo bem umido"); 
 
 if((humidadeSolo >= 300) && (humidadeSolo < 700)) 
   Serial.println(" Relativamente umido"); 
 
-if((humidadeSolo >= 700) && (humidadeSolo < 950))
-  Serial.println(" Bem umido");
+if((humidadeSolo >= 700) && (humidadeSolo < 1024))
+  Serial.println(" Solo seco");
 }
 ```
 
@@ -92,13 +92,13 @@ leitura = analogRead(A0);
 humidadeSolo = (leitura / 4);
 
 if(humidadeSolo < 300) 
-   Serial.println(" Solo seco"); 
+   Serial.println(" Solo bem umido"); 
 
 if((humidadeSolo >= 300) && (humidadeSolo < 700)) 
   Serial.println(" Relativamente umido"); 
 
-if((humidadeSolo >= 700) && (humidadeSolo < 950))
-  Serial.println(" Bem umido");
+if((humidadeSolo >= 700) && (humidadeSolo < 1024))
+  Serial.println(" Solo seco");
   
 }
 
