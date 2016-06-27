@@ -89,7 +89,7 @@ void myTimerEvent()
 {
 lcd.clear();
 leitura = analogRead(A0);
-humidadeSolo = (leitura / 4);
+humidadeSolo = (leitura);
 
 if(humidadeSolo < 300) 
    Serial.println(" Solo bem umido"); 
