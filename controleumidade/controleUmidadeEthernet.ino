@@ -48,13 +48,13 @@ void criaPaginaHTML()
           client.println("<html>");
           
           if(humidadeSolo < 300)  
-             client.println("Solo seco");
+             client.println("Solo bem umido");
   
           if((humidadeSolo >= 300) && (humidadeSolo < 700))
              client.println("Relativamente umido");
 
-          if ((humidadeSolo >= 700) && (humidadeSolo < 950))
-             client.println("Bem umido");       
+          if ((humidadeSolo >= 700) && (humidadeSolo < 1024))
+             client.println("Solo seco");       
           
           client.println("</html>");
           break;
